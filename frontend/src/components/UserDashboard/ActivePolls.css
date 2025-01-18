@@ -1,0 +1,57 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty Poll State */
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+/* Style for individual options */
+li ul li {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #16a085;
+}
+
+/* Hover effect for poll options */
+li:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
+}

@@ -1,0 +1,70 @@
+Basic Roadmap
+
+FILE STRUCTURE
+
+
+
+BACKEND
+
+backend/
+├── config/
+│   ├── database.js          # Sequelize database configuration
+│   ├── jwt.js               # JWT configuration
+├── controllers/
+│   ├── authController.js    # User authentication
+│   ├── pollController.js    # Poll management
+│   ├── voteController.js    # Voting logic
+├── middlewares/
+│   ├── authMiddleware.js    # Authentication middleware
+│   ├── roleMiddleware.js    # Role-based access control
+├── models/
+│   ├── index.js             # Sequelize initialization
+│   ├── user.js              # User model
+│   ├── poll.js              # Poll model
+│   ├── vote.js              # Vote model
+├── routes/
+│   ├── authRoutes.js        # Routes for login/register
+│   ├── pollRoutes.js        # Routes for poll management
+│   ├── voteRoutes.js        # Routes for voting
+├── tests/
+│   ├── auth.test.js         # Tests for authentication
+│   ├── poll.test.js         # Tests for polls
+│   ├── vote.test.js         # Tests for voting
+├── .env                     # Environment variables
+├── app.js                   # Express app initialization
+├── package.json             # Backend dependencies
+├── server.js                # App entry point
+
+
+
+
+FRONTEND
+
+
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Auth/
+│   │   │   ├── Login.js       # Login component
+│   │   │   ├── Register.js    # Register component
+│   │   ├── AdminDashboard/
+│   │   │   ├── CreatePoll.js  # Create poll form
+│   │   │   ├── ManagePolls.js # Manage polls list
+│   │   ├── UserDashboard/
+│   │   │   ├── ActivePolls.js # List of active polls
+│   │   │   ├── Vote.js        # Voting page
+│   ├── context/
+│   │   ├── AuthContext.js     # Authentication context
+│   │   ├── PollContext.js     # Poll context
+│   ├── utils/
+│   │   ├── api.js             # Axios API instance
+│   │   ├── auth.js            # Token management
+│   ├── App.js                 # Main App component
+│   ├── index.js               # Entry point
+├── public/
+│   ├── index.html             # Main HTML template
+├── .env                       # Frontend environment variables
+├── package.json               # Frontend dependencies
+
+
+
